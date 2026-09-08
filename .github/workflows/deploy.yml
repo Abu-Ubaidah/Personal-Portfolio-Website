@@ -24,6 +24,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
+
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
@@ -35,6 +38,9 @@ jobs:
 
       - name: Build project
         run: npm run build
+
+      - name: Preserve custom domain
+        run: cp CNAME dist/CNAME
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
