@@ -29,7 +29,7 @@ export default function Projects() {
       <h2 className="section-heading">Projects</h2>
       <div className="projects-grid">
         {projects.map((project) => (
-          <article className="project" key={project.name}>
+          <article className={`project${project.featured ? ' featured' : ''}`} key={project.name}>
             <div className="project-head">
               <div className="project-title">
                 <span className="project-icon" aria-hidden="true">
