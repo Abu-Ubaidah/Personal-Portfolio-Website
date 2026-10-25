@@ -1,6 +1,6 @@
 export const profile = {
   name: 'Abu Ubaidah',
-  role: 'IT Support & Systems Technician',
+  role: 'Software, Systems & Robotics Builder',
   subRole: 'Computer Science Graduate',
   credential: 'Certified Full Stack Software Engineer',
   location: 'Hyderabad, Sindh, Pakistan',
@@ -12,124 +12,176 @@ export const profile = {
 };
 
 export const heroStatement =
-  'I build reliable systems, solve technical problems, and keep people productive.';
+  'I build practical systems, make complex ideas easier to learn, and solve technical problems.';
 
 export const about = {
   paragraphs: [
-    "I'm a Computer Science graduate and a verified Full Stack Software Engineer with a solid grounding in Linux and Unix systems, networking fundamentals, and hands-on software deployment. I have a genuine interest in how infrastructure works at the physical and system level — configuring servers, managing network connectivity, diagnosing hardware faults before they disrupt people's work.",
-    "Alongside that, I've built and maintained real applications end-to-end, which means I understand what software actually needs from the hardware underneath it. I work methodically under pressure, communicate clearly with both technical and non-technical people, and pick up new tools without needing to be walked through everything.",
+    "I'm a Computer Science graduate and a certified Full Stack Software Engineer who enjoys turning abstract ideas into things people can see, try and improve. My work spans browser-based robotics tools, visual code generation, embedded electronics, and full-stack applications for real operational problems.",
+    "I also bring hands-on experience supporting computer labs and equipment. Whether I am debugging a circuit, tracing a network issue, or shaping a learning tool, I work from first principles, communicate clearly, and keep the experience practical for the person using it.",
   ],
   strengths: [
+    'Turns complex technical ideas into practical, visible experiences',
     'Debugs from first principles, not guesswork',
-    'Stays calm when systems are down',
+    'Builds across software, hardware and the systems between them',
     'Communicates clearly with technical and non-technical people',
-    'Picks up new tools fast without needing to be walked through everything',
-    'Reliable with documentation and equipment records',
+    'Reliable with documentation, testing and equipment records',
   ],
 };
 
 export const skillGroups = [
   {
-    label: 'Systems & infrastructure',
-    items: ['Linux / Unix', 'Windows OS', 'Server administration basics', 'Virtualisation (Docker)', 'Bash scripting'],
+    label: 'Robotics & embedded',
+    items: ['ESP32', 'Arduino', 'Sensors & actuators', 'HTML5 Canvas', 'Pathfinding', 'Circuit prototyping'],
   },
   {
-    label: 'Networking',
-    items: ['TCP/IP', 'LAN/WAN fundamentals', 'Network troubleshooting', 'DNS', 'DHCP'],
+    label: 'Full-stack development',
+    items: ['React', 'Node.js / Express', 'Python / Flask', 'REST APIs', 'JWT', 'Socket.IO'],
   },
   {
-    label: 'Hardware',
-    items: ['PC assembly & maintenance', 'Peripheral setup', 'Printer / scanner configuration', 'Server room basics'],
+    label: 'Data & systems',
+    items: ['MongoDB', 'PostgreSQL', 'Linux / Unix', 'Docker', 'Networking fundamentals', 'Bash scripting'],
   },
   {
-    label: 'Databases',
-    items: ['MongoDB (primary)', 'PostgreSQL', 'MySQL'],
-  },
-  {
-    label: 'Dev & tools',
-    items: ['Git / GitHub', 'Docker', 'Postman', 'Vim / CLI', 'Figma'],
-  },
-  {
-    label: 'Languages',
-    items: ['Python', 'JavaScript / TypeScript', 'HTML / CSS', 'Java'],
+    label: 'Ways of working',
+    items: ['First-principles debugging', 'Technical documentation', 'Lab support', 'User-focused design', 'Git / GitHub', 'Figma'],
   },
 ];
 
 export const projects = [
   {
-    name: 'IT Helpdesk',
+    name: 'RoboSim',
+    icon: 'robotics',
+    status: 'progress',
+    statusLabel: 'Teaching tool',
+    role: 'Browser simulator',
+    result: 'Safe robot logic practice',
+    stack: ['HTML5 Canvas', 'JavaScript', 'BFS pathfinding'],
+    description:
+      'A browser-based 2D robot simulator where learners practise line-following, obstacle avoidance and robot decision-making without needing hardware.',
+    points: [
+      'Uses a grid environment and breadth-first search to make pathfinding visible and easy to reason about.',
+      'Lets students test, fail and retry quickly before transferring the same sense-decide-act logic to a real robot.',
+    ],
+    githubHref: 'https://github.com/Abu-Ubaidah',
+    featured: true,
+  },
+  {
+    name: 'ArduinoBlock',
+    icon: 'code',
+    status: 'progress',
+    statusLabel: 'Learning tool',
+    role: 'Visual code generator',
+    result: 'Components mapped to code',
+    stack: ['Node.js', 'Express', 'MongoDB', 'JWT'],
+    description:
+      'A visual canvas that helps beginners move from a circuit idea to working Arduino code by arranging LEDs, servos, ultrasonic sensors and buzzers.',
+    points: [
+      'Connects a drag-and-drop component to the code it generates, so the visual model never hides the underlying logic.',
+      'Authentication and saved projects create a foundation for repeatable classroom practice.',
+    ],
+    githubHref: 'https://github.com/Abu-Ubaidah',
+    featured: true,
+  },
+  {
+    name: 'Embedded Monitoring System',
+    icon: 'hardware',
+    status: 'progress',
+    statusLabel: 'Hardware build',
+    role: 'Embedded systems build',
+    result: 'Physical sensing and alerting',
+    stack: ['ESP32', 'Displays', 'Speaker amplifier', 'Motor control'],
+    description:
+      'A demonstration model built from the circuit and enclosure up: an ESP32 web server, local status displays, audible alarms and a controlled water-pump motor.',
+    points: [
+      'Designed the amplifier, alarm indicators and voltage-control circuit, then integrated the wiring neatly into the physical model.',
+      'Shows how software, electronics and physical constraints have to be tested together.',
+    ],
+    githubHref: 'https://github.com/Abu-Ubaidah',
+    featured: true,
+  },
+  {
+    name: 'DevDiary',
+    icon: 'blog',
+    status: 'progress',
+    statusLabel: 'Web application',
+    role: 'RESTful platform',
+    result: 'Structured public publishing',
+    stack: ['Python Flask', 'MongoDB', 'JWT', 'REST API'],
+    description:
+      'A blogging platform for writing, tagging and publicly sharing posts, built to practise clean API design, authentication and document data modelling.',
+    points: [
+      'Protected author workflows sit alongside public content sharing.',
+      'Demonstrates a complete feature path from user model and API routes to a usable frontend.',
+    ],
+    githubHref: 'https://github.com/Abu-Ubaidah',
+  },
+  {
+    name: 'LabTrack',
+    icon: 'network',
+    status: 'live',
+    statusLabel: 'Operations app',
+    role: 'Asset management system',
+    result: 'Clearer lab accountability',
+    stack: ['React', 'Vite', 'Node.js', 'MongoDB', 'Socket.IO'],
+    description:
+      'An IT lab asset manager for inventory, checkouts, faults, repairs and maintenance history, with live updates for staff working from the same dashboard.',
+    points: [
+      'Makes equipment condition and responsibility visible instead of relying on scattered notes.',
+      'Models the practical support workflows behind a reliable teaching or computer lab.',
+    ],
+    liveHref: 'https://labtrack.bedaah.me',
+    githubHref: 'https://github.com/Abu-Ubaidah/labtrack-it-lab-asset-manager',
+  },
+  {
+    name: 'IT Helpdesk Portal',
     icon: 'helpdesk',
     status: 'live',
     statusLabel: 'Live website',
-    role: 'Full-stack product',
-    result: 'Centralized ticket operations',
-    stack: ['React', 'Node.js', 'PostgreSQL', 'Docker', 'REST API'],
+    role: 'Support workflow',
+    result: 'Issues tracked to resolution',
+    stack: ['Node.js', 'Express', 'MongoDB', 'JWT', 'Docker'],
     description:
-      'A fully featured help desk application with ticket creation, assignment, status tracking, and role-based access for agents and admins.',
+      'A support ticket application that gives users and technicians a shared path from issue report to assignment, updates and resolution.',
     points: [
-      'PostgreSQL backend with proper relational schema — tickets, users, comments, categories.',
-      'Containerised with Docker for reproducible local development and straightforward production deployment.',
+      'Role-based access keeps user, technician and administrator workflows clear.',
+      'Comments, priorities and status changes make the work understandable to everyone involved.',
     ],
-    href: 'https://helpdesk.bedaah.me',
     liveHref: 'https://helpdesk.bedaah.me',
     githubHref: 'https://github.com/Abu-Ubaidah/It-helpdesk-portal',
   },
   {
-    name: 'Sysmon',
+    name: 'SysMon',
     icon: 'monitoring',
     status: 'live',
     statusLabel: 'Live website',
     role: 'Monitoring dashboard',
-    result: 'Real-time system visibility',
-    stack: ['Python', 'psutil', 'Flask', 'React', 'MongoDB'],
+    result: 'Historical system visibility',
+    stack: ['React', 'Vite', 'Node.js', 'MongoDB', 'Docker'],
     description:
-      'A web dashboard that collects CPU, RAM, disk, and network stats from the local machine in real time and stores history in MongoDB — exactly what an IT technician monitors daily.',
+      'A dashboard that collects CPU, memory, disk and network readings over time so performance changes become visible before they become incidents.',
     points: [
-      'Separate React frontend and Python/Flask backend, cleanly organised and ready to host.',
-      'Historical data stored in MongoDB makes it easy to spot gradual degradation rather than just one-off spikes.',
+      'Separates collection, storage and presentation into understandable system layers.',
+      'Historical readings help distinguish gradual capacity problems from one-off spikes.',
     ],
-    href: 'https://sysmon.bedaah.me',
     liveHref: 'https://sysmon.bedaah.me',
     githubHref: 'https://github.com/Abu-Ubaidah/sysmon',
-    featured: false,
   },
   {
     name: 'Pulse',
     icon: 'chat',
     status: 'live',
     statusLabel: 'Live website',
-    role: 'Full-stack product',
-    result: 'Real-time team communication',
-    stack: ['React', 'Node.js', 'WebSockets', 'MongoDB', 'JWT'],
+    role: 'Real-time application',
+    result: 'Connected team communication',
+    stack: ['React', 'Express', 'MongoDB', 'JWT', 'Socket.IO'],
     description:
-      'A full-stack chat application built to demonstrate WebSockets, REST API design, authentication, and MongoDB — with a React frontend and a clean Node backend.',
+      'A real-time team chat with channels, message history, typing indicators, online presence and reactions.',
     points: [
-      'JWT-based authentication flow with protected routes and session management.',
-      'Persistent message history stored in MongoDB, delivered to new joiners on connection.',
+      'Combines REST APIs, protected routes and Socket.IO events in one product.',
+      'Persistent history and presence features make the interface useful beyond a simple messaging demo.',
     ],
-    href: 'https://pulse.bedaah.me',
     liveHref: 'https://pulse.bedaah.me',
     githubHref: 'https://github.com/Abu-Ubaidah/pulse-chat-application',
-    featured: false,
-  },
-  {
-    name: 'Labtrack',
-    icon: 'network',
-    status: 'live',
-    statusLabel: 'Live website',
-    role: 'Network monitoring tool',
-    result: 'Faster lab issue detection',
-    stack: ['Python', 'Flask', 'MongoDB', 'ICMP', 'LAN'],
-    description:
-      'A dashboard that continuously pings every machine on a local subnet and shows live status — online, offline, response time — the kind of visibility a lab manager actually needs day to day.',
-    points: [
-      'Health-check results stored in MongoDB with timestamps, so recurring issues stand out instead of being treated as one-off faults.',
-      'Email alert fires automatically the moment a machine drops off the network, cutting diagnosis time.',
-    ],
-    href: 'https://github.com/Abu-Ubaidah/labtrack-it-lab-asset-manager',
-    liveHref: 'https://labtrack.bedaah.me',
-    githubHref: 'https://github.com/Abu-Ubaidah/labtrack-it-lab-asset-manager',
-    featured: false,
   },
 ];
 

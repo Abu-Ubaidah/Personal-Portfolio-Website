@@ -1,4 +1,15 @@
-import { ArrowUpRight, Globe, Headphones, Activity, MessageCircle, Network } from 'lucide-react';
+import {
+  ArrowUpRight,
+  Globe,
+  Headphones,
+  Activity,
+  MessageCircle,
+  Network,
+  Bot,
+  Code2,
+  Cpu,
+  BookOpen,
+} from 'lucide-react';
 import { projects } from '../data/content.js';
 
 const projectIcons = {
@@ -6,6 +17,10 @@ const projectIcons = {
   monitoring: Activity,
   chat: MessageCircle,
   network: Network,
+  robotics: Bot,
+  code: Code2,
+  hardware: Cpu,
+  blog: BookOpen,
 };
 
 export default function Projects() {

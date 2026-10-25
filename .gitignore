@@ -5,3 +5,6 @@ dist/
 !.env.example
 *.log
 .DS_Store
+
+# Private LinkedIn/profile notes
+README.private.md

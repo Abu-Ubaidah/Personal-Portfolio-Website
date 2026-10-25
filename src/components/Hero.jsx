@@ -17,8 +17,8 @@ export default function Hero() {
             {heroStatement.split('technical problems')[1]}
           </h1>
           <p className="hero-intro">
-            IT Support &amp; Systems Technician focused on dependable infrastructure,
-            clear troubleshooting, and practical solutions.
+            Software, systems and robotics builder focused on practical learning,
+            dependable infrastructure, and solutions people can actually use.
             <span className="hero-credential">{profile.credential}</span>
           </p>
           <div className="hero-actions" aria-label="Contact actions">

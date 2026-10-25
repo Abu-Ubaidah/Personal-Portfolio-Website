@@ -959,6 +959,11 @@ section:last-of-type { padding-bottom: 0; }
 
 .dot.status-progress { background: var(--amber); }
 
+.dot.status-live,
+.dot.status-progress {
+  box-shadow: 0 0 5px currentColor;
+}
+
 .project p.project-desc {
   color: var(--ink-soft);
   margin: 10px 0 14px;
