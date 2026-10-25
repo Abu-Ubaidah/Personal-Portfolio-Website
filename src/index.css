@@ -879,26 +879,6 @@ section:last-of-type { padding-bottom: 0; }
 
 .project:hover::before { opacity: 1; }
 
-.project.featured {
-  border-color: rgba(79,156,249,0.48);
-  box-shadow: 0 0 28px rgba(79,156,249,0.08);
-}
-
-.project.featured::after {
-  content: 'featured';
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  font-family: var(--font-mono);
-  font-size: 0.68rem;
-  letter-spacing: 0.08em;
-  color: var(--signal);
-  background: var(--signal-soft);
-  border: 1px solid rgba(79,156,249,0.25);
-  padding: 3px 9px;
-  border-radius: 20px;
-}
-
 .project-head {
   display: flex;
   align-items: flex-start;

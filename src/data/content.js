@@ -63,7 +63,6 @@ export const projects = [
       'Lets students test, fail and retry quickly before transferring the same sense-decide-act logic to a real robot.',
     ],
     githubHref: 'https://github.com/Abu-Ubaidah',
-    featured: true,
   },
   {
     name: 'ArduinoBlock',
@@ -80,24 +79,6 @@ export const projects = [
       'Authentication and saved projects create a foundation for repeatable classroom practice.',
     ],
     githubHref: 'https://github.com/Abu-Ubaidah',
-    featured: true,
-  },
-  {
-    name: 'Embedded Monitoring System',
-    icon: 'hardware',
-    status: 'progress',
-    statusLabel: 'Hardware build',
-    role: 'Embedded systems build',
-    result: 'Physical sensing and alerting',
-    stack: ['ESP32', 'Displays', 'Speaker amplifier', 'Motor control'],
-    description:
-      'A demonstration model built from the circuit and enclosure up: an ESP32 web server, local status displays, audible alarms and a controlled water-pump motor.',
-    points: [
-      'Designed the amplifier, alarm indicators and voltage-control circuit, then integrated the wiring neatly into the physical model.',
-      'Shows how software, electronics and physical constraints have to be tested together.',
-    ],
-    githubHref: 'https://github.com/Abu-Ubaidah',
-    featured: true,
   },
   {
     name: 'DevDiary',
